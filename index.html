@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_container">
+        <!-- tables inside this DIV could have draggable content -->
+        <div id="redips-drag">
+
+            <!-- left container -->
+            <div id="left">
+                <table id="table1">
+                    <colgroup>
+                        <col width="190"/>
+                    </colgroup>
+                    <div id=”redips-drag”>
+                        <tbody>
+                            
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone ar" id="arts" draggable="true" ondragstart="dragStart(event)" >Arts</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone bi" id="biology" draggable="true" ondragstart="dragStart(event)" >Biology</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone ch" id="chemistry" draggable="true" ondragstart="dragStart(event)" >Chemistry</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone en" id="english" draggable="true" ondragstart="dragStart(event)" >English</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone et" id="ethics" draggable="true" ondragstart="dragStart(event)" >Ethics</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone hi" id="history" draggable="true" ondragstart="dragStart(event)" >History</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone it" id="it" draggable="true" ondragstart="dragStart(event)" >IT</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone ma" id="mathematics" draggable="true" ondragstart="dragStart(event)" >Mathematics</div></div></td></tr></p>
+							<p><tr><td class="dark"><div class="drag"><div class="redips-drag redips-clone ph" id="physics" draggable="true" ondragstart="dragStart(event)" >Physics</div></div></td></tr></p>
+							<p><tr><td class="redips-trash" title="Trash">Trash</td></tr></p>
+						</tbody>
+                       </div>
+                       <div id=”redips-drag”></div>    
+                </table>
+            </div><!-- left container -->
+            
+            <!-- right container -->
+            <div id="right">
+                <table id="table2">
+                    <colgroup>
+                        <col width="50"/>
+                        <col width="100"/>
+                        <col width="100"/>
+                        <col width="100"/>
+                        <col width="100"/>
+                        <col width="100"/>
+                    </colgroup>
+               
+            
+                    <tbody>
+                        <tr>
+                            <!-- if checkbox is checked, clone school subjects to the whole table row  -->
+                            <td class="redips-mark blank">
+                                <input id="week" type="checkbox" title="Apply school subjects to the week" checked/>
+                                <input id="report" type="checkbox" title="Show subject report"/>
+                            </td>
+                            <td class="redips-mark dark">Monday</td>
+                            <td class="redips-mark dark">Tuesday</td>
+                            <td class="redips-mark dark">Wednesday</td>
+                            <td class="redips-mark dark">Thursday</td>
+                            <td class="redips-mark dark">Friday</td>
+                        </tr>
+                        <td class="redips-mark dark">8:00</td>
+                       <p> <div class="drop"><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></div> </p> 
+                       <p> <div class="drop"><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></div></p>
+                       <p> <div class="drop"><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></div></p>
+                       <p> <div class="drop"><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></div></p> 
+                       <p> <div class="drop"><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></div></p>
+                    </tr>
+                    <tr>
+                        <td class="redips-mark dark">9:00</td>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                    </tr>
+                    <tr>
+                        <td class="redips-mark dark">10:00</td>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                    </tr>
+                    <tr>
+                        <td class="redips-mark dark">11:00</td>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                    </tr>
+                    <tr>
+                        <td class="redips-mark dark">12:00</td>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                        <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                    </tr>
+                       
+                        <tr>
+                            <td class="redips-mark dark">13:00</td>
+                            <td class="redips-mark lunch" colspan="5">Lunch</td>
+                        </tr>
+                        <tr>
+                            <td class="redips-mark dark">14:00</td>
+                            <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                            <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        </tr>
+                        <tr>
+                            <td class="redips-mark dark">15:00</td>
+                            <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                            <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        </tr>
+                        <tr>
+                            <td class="redips-mark dark">16:00</td>
+                            <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"  ></td></p> 
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                            <p><td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p> 
+                            <p> <td class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)" ></td></p>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!-- right container -->
+        </div><!-- drag container -->
+        <br/>
+
+        <div class="button_container">
+            <input type="button" value="Save" class="button" onclick="redips.save()" title="Save timetable"/>
+        </div>
+    </div><!-- main container -->
+</body>
+<script src="./main.js">
+    
+</script>
+</html>
